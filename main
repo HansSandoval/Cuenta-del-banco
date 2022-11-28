@@ -1,0 +1,15 @@
+from profile import Client 
+
+def main():
+
+    print("--------------------------------------------")
+    name=input("Ingresar nombre completo:")
+    rut=input("Ingresar Rut sin guion ni punto:")
+    naccount=input("Ingrese el numero de cuenta:")
+    keycode=input("Ingrese su clave:")
+    print("--------------------------------------------")
+    account=Client(name,rut,keycode,naccount,keycode)
+    account.deposit()
+    account.cuenta()
+if __name__ == "__main__":
+    main()
